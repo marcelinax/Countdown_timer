@@ -24,6 +24,7 @@ const setStart = () => {
     .querySelector(".set-time-box")
     .classList.toggle("set-time-box--active");
   isRunning = !isRunning;
+
   playBtn.src = "http://127.0.0.1:5500/assets/stop-solid.svg";
 };
 
@@ -107,8 +108,21 @@ const changeButton = () => {
   });
 };
 
+const restart = () => {
+  isRunning = false;
+  document.querySelector(".time").innerHTML = "00:00";
+  duration = 0;
+  playBtn.src = "http://127.0.0.1:5500/assets/play-solid.svg";
+};
+
+document.getElementById("restart").addEventListener("click", () => {
+  restart();
+});
+
 initSetStart();
 setParams();
 showInputs();
-setInterval(updateTime, 1000);
+
 changeButton();
+
+setInterval(updateTime, 1000);
