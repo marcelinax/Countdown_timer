@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  .timer-box {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 15px rgba(#000, 0.2);
+    border-radius: 10px;
+    background-color: white;
+    width: 400px;
+    height: 400px;
+    padding: 1rem;
+    position: relative;
+    .top-opptions {
+      display: flex;
+      justify-content: space-between;
+      .simple-button {
+        outline: none;
+        border: none;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: 0.5s all;
+        &:hover {
+          transform: scale(0.9);
+        }
+        img {
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+    .timer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      justify-content: center;
+      .progress-bar {
+        width: 280px;
+        height: 280px;
+        position: absolute;
+        top: 0;
+      }
+
+      .title {
+        font-size: 18px;
+      }
+      .time {
+        color: #faa975;
+        font-size: 4rem;
+        font-weight: 400;
+      }
+    }
+    .bottom-opptions {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      justify-content: center;
+      bottom: -30px;
+      left: 33%;
+      .circle-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        box-shadow: 0 0 15px rgba(#000, 0.2);
+        border-radius: 50%;
+        outline: none;
+        border: none;
+        width: 70px;
+        height: 70px;
+        padding: 1.5rem;
+        cursor: pointer;
+        transition: 0.5s all;
+        &:hover {
+          transform: scale(0.9);
+        }
+        &:first-child {
+          margin-right: 1rem;
+        }
+        img {
+          width: 29px;
+          height: 29px;
+        }
+      }
+    }
+  }
+  .set-time-box {
+    display: none;
+    &--active {
+      display: flex;
+    }
+  }
+}

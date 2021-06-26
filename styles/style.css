@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+}
+
+.container .timer-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background-color: white;
+  width: 400px;
+  height: 400px;
+  padding: 1rem;
+  position: relative;
+}
+
+.container .timer-box .top-opptions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .timer-box .top-opptions .simple-button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.container .timer-box .top-opptions .simple-button:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.container .timer-box .top-opptions .simple-button img {
+  width: 30px;
+  height: 30px;
+}
+
+.container .timer-box .timer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .timer-box .timer .progress-bar {
+  width: 280px;
+  height: 280px;
+  position: absolute;
+  top: 0;
+}
+
+.container .timer-box .timer .title {
+  font-size: 18px;
+}
+
+.container .timer-box .timer .time {
+  color: #faa975;
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+.container .timer-box .bottom-opptions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  bottom: -30px;
+  left: 33%;
+}
+
+.container .timer-box .bottom-opptions .circle-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: white;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  width: 70px;
+  height: 70px;
+  padding: 1.5rem;
+  cursor: pointer;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.container .timer-box .bottom-opptions .circle-button:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.container .timer-box .bottom-opptions .circle-button:first-child {
+  margin-right: 1rem;
+}
+
+.container .timer-box .bottom-opptions .circle-button img {
+  width: 29px;
+  height: 29px;
+}
+
+.container .set-time-box {
+  display: none;
+}
+
+.container .set-time-box--active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=style.css.map */
