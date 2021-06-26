@@ -29,28 +29,28 @@
           <button class="circle-button">
             <img src="./assets/undo-solid.svg" alt="" />
           </button>
-          <button class="circle-button">
-            <img src="./assets/play-solid.svg" alt="" />
+          <button class="circle-button" id="play-btn">
+            <img src="./assets/play-solid.svg" alt="" id="play-img" />
           </button>
         </div>
       </div>
       <div class="set-time-box">
-        <div class="set-time-input">
-          <div>
-            <p id="minutes">0</p>
-          </div>
-          <!-- <input type="text" id="minutes" placeholder="0" value="0" /> -->
-          <div class="buttons">
-            <button id="minutes-plus">+</button>
-            <button id="minutes-minus">-</button>
-          </div>
-          <!-- <input type="text" id="seconds" placeholder="0" value="0" /> -->
-          <p id="seconds">0</p>
-          <div class="buttons"
-            ><button id="seconds-plus">+</button>
-            <button id="seconds-minus">-</button></div
-          >
+        <div class="set-time-inputs">
           <input type="text" id="title" placeholder="Title" />
+          <div class="minutes-box">
+            <p id="minutes">0</p>
+            <div class="buttons">
+              <button id="minutes-plus">+</button>
+              <button id="minutes-minus">-</button>
+            </div>
+          </div>
+          <div class="seconds-box">
+            <p id="seconds">0</p>
+            <div class="buttons"
+              ><button id="seconds-plus">+</button>
+              <button id="seconds-minus">-</button></div
+            >
+          </div>
           <button class="set-time-btn">SET</button>
         </div>
       </div>

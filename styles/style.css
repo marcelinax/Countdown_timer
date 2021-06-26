@@ -168,5 +168,154 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: absolute;
+  top: 10px;
+  left: 38.7%;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background-color: white;
+  width: calc(400px - 2rem);
+  height: 150px;
+  padding: 2rem;
+}
+
+.container .set-time-box--active .set-time-inputs {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.container .set-time-box--active .set-time-inputs .minutes-box,
+.container .set-time-box--active .set-time-inputs .seconds-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .set-time-box--active .set-time-inputs .minutes-box .buttons,
+.container .set-time-box--active .set-time-inputs .seconds-box .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .set-time-box--active .set-time-inputs .minutes-box .buttons button,
+.container .set-time-box--active .set-time-inputs .seconds-box .buttons button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  outline: none;
+  border: none;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+  width: 30px;
+  height: 30px;
+  color: #fb7575;
+  cursor: pointer;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  border-radius: 4px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.container .set-time-box--active .set-time-inputs .minutes-box .buttons button:hover,
+.container .set-time-box--active .set-time-inputs .seconds-box .buttons button:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.container .set-time-box--active .set-time-inputs .minutes-box .buttons button:first-child,
+.container .set-time-box--active .set-time-inputs .seconds-box .buttons button:first-child {
+  margin-right: 1rem;
+  color: #50e3c2;
+}
+
+.container .set-time-box--active .set-time-inputs .minutes-box p,
+.container .set-time-box--active .set-time-inputs .seconds-box p {
+  color: #75acfb;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.container .set-time-box--active .set-time-inputs input {
+  border: none;
+  border-bottom: 2px solid #75acfb;
+  height: 30px;
+  margin-bottom: 1rem;
+  padding-left: 0.5rem;
+  color: #75acfb;
+}
+
+.container .set-time-box--active .set-time-inputs input::-webkit-input-placeholder {
+  color: #75acfb;
+}
+
+.container .set-time-box--active .set-time-inputs input:-ms-input-placeholder {
+  color: #75acfb;
+}
+
+.container .set-time-box--active .set-time-inputs input::-ms-input-placeholder {
+  color: #75acfb;
+}
+
+.container .set-time-box--active .set-time-inputs input::placeholder {
+  color: #75acfb;
+}
+
+.container .set-time-box--active .set-time-inputs .set-time-btn {
+  position: absolute;
+  bottom: -55px;
+  left: 43%;
+  width: 60px;
+  height: 60px;
+  outline: none;
+  border-radius: 50%;
+  border: none;
+  background-color: white;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  color: #50e3c2;
+  font-size: 20px;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+  cursor: pointer;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.container .set-time-box--active .set-time-inputs .set-time-btn:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.container .set-time-box--active .minutes-box {
+  margin: 1rem 0;
 }
 /*# sourceMappingURL=style.css.map */
