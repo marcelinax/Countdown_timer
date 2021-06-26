@@ -6,6 +6,7 @@ let seconds = 0;
 let minutesCounter = 0;
 let secondsCounter = 0;
 let isRunning = false;
+let durationCopy = 0;
 
 const secondsEl = document.getElementById("seconds");
 const minutesEl = document.getElementById("minutes");
@@ -18,6 +19,7 @@ const playBtn = document.getElementById("play-img");
 
 const setStart = () => {
   duration = +minutesEl.innerHTML * 60 + +secondsEl.innerHTML;
+  durationCopy = duration;
 
   document.querySelector(".title").innerHTML = titleEl.value;
   document
@@ -108,12 +110,21 @@ const changeButton = () => {
   });
 };
 
-const restart = () => {
+const clearCountdownTimer = () => {
   isRunning = false;
   document.querySelector(".time").innerHTML = "00:00";
   duration = 0;
   playBtn.src = "http://127.0.0.1:5500/assets/play-solid.svg";
+  document.querySelector(".title").innerHTML = "";
 };
+
+const restart = () => {
+  duration = durationCopy;
+};
+
+document.getElementById("clear").addEventListener("click", () => {
+  clearCountdownTimer();
+});
 
 document.getElementById("restart").addEventListener("click", () => {
   restart();
